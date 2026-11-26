@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login — CodeAlpha Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
+
+    <main>
+      <div class="auth-wrapper">
+        <div class="auth-card">
+          <h1>Welcome Back</h1>
+          <p class="auth-subtitle">Sign in to access your saved cart, checkout, and order history.</p>
+
+          <div id="auth-error-box" class="alert alert-error" style="display:none;"></div>
+
+          <form id="login-form" novalidate>
+            <div class="form-group">
+              <label for="login-email">Email Address</label>
+              <input
+                type="email"
+                id="login-email"
+                class="form-control"
+                required
+                autocomplete="email"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="login-password">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                class="form-control"
+                required
+                autocomplete="current-password"
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <button type="submit" id="login-submit-btn" class="btn btn-primary btn-lg btn-block">
+              Sign In
+            </button>
+          </form>
+
+          <p style="margin:22px 0 0; text-align:center; font-size:0.9rem; color:var(--text-secondary);">
+            Don't have an account?
+            <a id="switch-to-register" href="/register" style="color:var(--accent); font-weight:700;">Create one</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div id="site-footer-root"></div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

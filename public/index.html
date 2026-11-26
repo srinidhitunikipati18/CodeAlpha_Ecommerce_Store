@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeAlpha Store — Modern Tech, Workspace &amp; Lifestyle Essentials</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
+
+    <main>
+      <!-- Hero Banner -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div>
+            <span class="hero-eyebrow">New Season Drop &middot; 2026 Collection</span>
+            <h1 class="hero-title">
+              Elevate Your Everyday <span>Tech &amp; Workspace</span>
+            </h1>
+            <p class="hero-subtitle">
+              Discover studio-grade audio, precision desk gear, and minimalist lifestyle essentials
+              engineered for creators, developers, and modern explorers.
+            </p>
+            <div class="hero-cta-group">
+              <a href="/shop" class="btn btn-primary btn-lg">
+                Shop Now
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#categories" class="btn hero-btn-outline btn-lg">Explore Categories</a>
+            </div>
+            <div class="hero-metrics">
+              <div class="hero-metric">
+                <strong>100+</strong>
+                <span>Curated Products</span>
+              </div>
+              <div class="hero-metric">
+                <strong>12</strong>
+                <span>Shop Categories</span>
+              </div>
+              <div class="hero-metric">
+                <strong>Free &#8377;999+</strong>
+                <span>Express Shipping</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <img src="/images/hero-showcase.svg" alt="Featured AeroPulse Studio ANC Headphones" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="section-eyebrow">Browse by Department</span>
+              <h2 class="section-title">Shop by Category</h2>
+              <p class="section-desc">Jump straight into the collection built for your setup.</p>
+            </div>
+            <a href="/shop" class="btn btn-secondary btn-sm">View All Products</a>
+          </div>
+
+          <div id="categories-grid" class="category-grid">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              <span>Loading categories...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Products Section -->
+      <section class="section section-alt" id="featured">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="section-eyebrow">Editor's Selection</span>
+              <h2 class="section-title">Featured Products</h2>
+              <p class="section-desc">Hand-picked flagship gear loved by our community.</p>
+            </div>
+            <a href="/shop?sort=featured" class="btn btn-secondary btn-sm">Explore Featured</a>
+          </div>
+
+          <div id="featured-grid" class="product-grid">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              <span>Loading featured products...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trending Products Section -->
+      <section class="section" id="trending">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="section-eyebrow">Most Popular Right Now</span>
+              <h2 class="section-title">Trending Products</h2>
+              <p class="section-desc">Best-selling essentials flying off our shelves this week.</p>
+            </div>
+            <a href="/shop?sort=rating" class="btn btn-secondary btn-sm">See Top Rated</a>
+          </div>
+
+          <div id="trending-grid" class="product-grid">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              <span>Loading trending products...</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="section section-alt" id="about">
+        <div class="container about-grid">
+          <div>
+            <span class="section-eyebrow">About CodeAlpha Store</span>
+            <h2 class="section-title">Crafted for Quality, Speed &amp; Transparency</h2>
+            <p class="section-desc" style="margin-top: 14px; line-height: 1.75;">
+              CodeAlpha Store was built to deliver a seamless, trustworthy online shopping
+              experience. Every item in our catalog is vetted for build quality, long-term
+              durability, and clean design — backed by real-time stock tracking, secure user
+              accounts, and instant order confirmation.
+            </p>
+            <div class="features-grid" style="margin-top: 24px;">
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <h3>Secure Accounts</h3>
+                <p>Bcrypt password hashing and protected session-based order history.</p>
+              </div>
+              <div class="feature-box">
+                <div class="feature-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="3" width="15" height="13"></rect>
+                    <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                    <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                    <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                  </svg>
+                </div>
+                <h3>Fast Dispatch</h3>
+                <p>Orders over &#8377;999 ship free across India with live inventory validation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card">
+              <strong>100%</strong>
+              <span>Live SQLite Stock Sync</span>
+            </div>
+            <div class="stat-card">
+              <strong>24/7</strong>
+              <span>Order Tracking &amp; History</span>
+            </div>
+            <div class="stat-card">
+              <strong>30-Day</strong>
+              <span>Hassle-Free Returns</span>
+            </div>
+            <div class="stat-card">
+              <strong>4.8&#9733;</strong>
+              <span>Customer Satisfaction</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter Section -->
+      <section class="section" id="newsletter">
+        <div class="container">
+          <div class="newsletter-banner">
+            <div class="newsletter-copy">
+              <h2>Stay in the Loop</h2>
+              <p>Subscribe for early access to product launches, restocks, and exclusive offers.</p>
+            </div>
+            <div style="flex: 1; max-width: 460px;">
+              <form class="newsletter-form" id="newsletter-form">
+                <input
+                  type="email"
+                  id="newsletter-email"
+                  placeholder="Enter your email address"
+                  required
+                  aria-label="Email address for newsletter"
+                />
+                <button type="submit" class="btn btn-primary" id="newsletter-btn">Subscribe</button>
+              </form>
+              <div id="newsletter-feedback" style="margin-top: 10px; font-size: 0.88rem;"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section section-alt" id="contact">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <span class="section-eyebrow">Get in Touch</span>
+              <h2 class="section-title">Customer Care &amp; Contact</h2>
+              <p class="section-desc">Have questions about an order or product specs? Reach out anytime.</p>
+            </div>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3>Support Email</h3>
+              <p>support@codealphastore.in</p>
+              <p style="margin-top: 6px; font-size: 0.84rem;">Typical response within 2 hours.</p>
+            </div>
+            <div class="contact-card">
+              <h3>Customer Helpline</h3>
+              <p>+91 1800-555-0194</p>
+              <p style="margin-top: 6px; font-size: 0.84rem;">Mon &ndash; Sat, 9:00 AM &ndash; 7:00 PM IST</p>
+            </div>
+            <div class="contact-card">
+              <h3>Studio Headquarters</h3>
+              <p>420 Innovation Way, Bengaluru</p>
+              <p style="margin-top: 6px; font-size: 0.84rem;">Pan-India express delivery</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer-root"></div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/home.js"></script>
+  </body>
+</html>

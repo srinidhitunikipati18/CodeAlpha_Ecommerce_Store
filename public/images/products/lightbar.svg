@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#FEFCE8"/>
+      <stop offset="100%" stop-color="#E2E8F0"/>
+    </radialGradient>
+    <linearGradient id="glow" x1="240" y1="145" x2="240" y2="290" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FDE047" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FDE047" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <rect width="480" height="360" rx="20" fill="url(#bg)"/>
+  <!-- Light Cone -->
+  <polygon points="88,145 392,145 436,300 44,300" fill="url(#glow)"/>
+  <g filter="url(#shadow)">
+    <!-- Clamp Counterweight -->
+    <rect x="218" y="96" width="44" height="36" rx="8" fill="#334155"/>
+    <!-- LED Bar -->
+    <rect x="74" y="126" width="332" height="22" rx="11" fill="#0F172A"/>
+    <rect x="86" y="143" width="308" height="5" rx="2.5" fill="#FEF08A"/>
+    <!-- Wireless Rotary Puck -->
+    <ellipse cx="240" cy="262" rx="46" ry="18" fill="#334155"/>
+    <ellipse cx="240" cy="252" rx="42" ry="15" fill="#0F172A"/>
+    <ellipse cx="240" cy="250" rx="30" ry="10" stroke="#6366F1" stroke-width="2"/>
+  </g>
+</svg>

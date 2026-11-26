@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account — CodeAlpha Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
+
+    <main>
+      <div class="auth-wrapper">
+        <div class="auth-card">
+          <h1>Create Account</h1>
+          <p class="auth-subtitle">Join CodeAlpha Store for fast checkout and order tracking.</p>
+
+          <div id="auth-error-box" class="alert alert-error" style="display:none;"></div>
+
+          <form id="register-form" novalidate>
+            <div class="form-group">
+              <label for="register-name">Full Name</label>
+              <input
+                type="text"
+                id="register-name"
+                class="form-control"
+                required
+                minlength="2"
+                maxlength="80"
+                autocomplete="name"
+                placeholder="Jane Doe"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="register-email">Email Address</label>
+              <input
+                type="email"
+                id="register-email"
+                class="form-control"
+                required
+                autocomplete="email"
+                placeholder="you@example.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="register-password">Password</label>
+              <input
+                type="password"
+                id="register-password"
+                class="form-control"
+                required
+                minlength="6"
+                autocomplete="new-password"
+                placeholder="Minimum 6 characters"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="register-confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="register-confirm-password"
+                class="form-control"
+                required
+                minlength="6"
+                autocomplete="new-password"
+                placeholder="Re-enter your password"
+              />
+            </div>
+
+            <button type="submit" id="register-submit-btn" class="btn btn-primary btn-lg btn-block">
+              Create Account
+            </button>
+          </form>
+
+          <p style="margin:22px 0 0; text-align:center; font-size:0.9rem; color:var(--text-secondary);">
+            Already have an account?
+            <a id="switch-to-login" href="/login" style="color:var(--accent); font-weight:700;">Sign in</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div id="site-footer-root"></div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/auth.js"></script>
+  </body>
+</html>

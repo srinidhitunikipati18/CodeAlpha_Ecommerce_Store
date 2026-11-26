@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop All Products — CodeAlpha Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header-root"></div>
+
+    <main>
+      <section class="page-banner">
+        <div class="container">
+          <h1>Explore Our Catalog</h1>
+          <p id="shop-subtitle">Browse all curated electronics, desk essentials, and lifestyle gear.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="shop-controls">
+            <div class="category-pills" id="category-filter-pills">
+              <button type="button" class="pill-btn active" data-category="all">All</button>
+            </div>
+
+            <div class="shop-right-controls">
+              <input
+                type="search"
+                id="shop-search-input"
+                class="form-control"
+                placeholder="Search by product name..."
+                aria-label="Filter products by name"
+              />
+              <select id="shop-sort-select" class="form-control" aria-label="Sort products">
+                <option value="featured">Sort: Featured</option>
+                <option value="popular">Most Popular</option>
+                <option value="price_asc">Price: Low to High</option>
+                <option value="price_desc">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+                <option value="newest">Newest Arrivals</option>
+              </select>
+            </div>
+          </div>
+
+          <div
+            style="display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; color:var(--text-secondary); font-size:0.9rem;"
+          >
+            <span id="shop-results-count">Loading products...</span>
+            <button type="button" id="shop-reset-btn" class="btn btn-ghost btn-sm" style="display:none;">
+              Reset Filters
+            </button>
+          </div>
+
+          <div id="shop-error-box" class="alert alert-error" style="display:none;"></div>
+
+          <div id="shop-products-grid" class="product-grid">
+            <div class="loading-state">
+              <div class="spinner"></div>
+              <span>Loading catalog...</span>
+            </div>
+          </div>
+
+          <div id="shop-load-more-wrap" style="text-align:center; margin-top:32px; display:none;">
+            <button type="button" id="shop-load-more-btn" class="btn btn-secondary btn-lg">
+              Load More Products
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="site-footer-root"></div>
+
+    <script src="/js/api.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/shop.js"></script>
+  </body>
+</html>

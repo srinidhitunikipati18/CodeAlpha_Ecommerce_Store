@@ -1,0 +1,29 @@
+{
+  "name": "codealpha-ecommerce-store",
+  "version": "1.0.0",
+  "description": "CodeAlpha Full Stack Development Internship Task 1 - Full-Stack E-Commerce Store built with HTML5, CSS3, ES6+ JavaScript, Node.js, Express.js, and SQLite.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "init-db": "node database/init.js",
+    "test": "node tests/api.test.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "codealpha",
+    "nodejs",
+    "express",
+    "sqlite",
+    "fullstack"
+  ],
+  "author": "CodeAlpha Intern",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.7.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1"
+  }
+}
