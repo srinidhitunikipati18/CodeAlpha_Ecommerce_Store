@@ -51,9 +51,9 @@ CodeAlpha_Ecommerce_Store/
 ├── config/
 │   └── env.js                 # Environment variable loading and validation
 ├── database/
-│   ├── db.js                  # SQLite connection, WAL mode, and schema initialization
+│   ├── db.js                  The SQLite database initializes and seeds 108 sample products automatically on server startup.
 │   ├── init.js                # Standalone DB initialization & seeding script
-│   ├── seed.js                # 14 sample products across 5 categories
+│   ├── seed.js                # 108 sample products across 12 categories
 │   └── sessionStore.js        # Persistent SQLite store for express-session
 ├── middleware/
 │   ├── auth.js                # attachUser and requireAuth middleware
